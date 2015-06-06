@@ -180,5 +180,10 @@ PRODUCT_PACKAGES += \
     libwcnss_qmi \
     wcnss_service
 
+PRODUCT_PACKAGES += \
+    openssh \
+    openssl \
+    OpenCamera
+
 # Inherit from qcom-common
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
