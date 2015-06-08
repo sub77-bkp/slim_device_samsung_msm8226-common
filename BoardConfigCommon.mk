@@ -101,7 +101,8 @@ BOARD_SEPOLICY_DIRS += device/samsung/msm8226-common/sepolicy
 BOARD_SEPOLICY_UNION += \
        hostapd.te \
        platform_app.te \
-       kernel.te
+       kernel.te \
+	   netd.te
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
