@@ -1,0 +1,12 @@
+#============= sysinit ==============
+allow sysinit default_prop:property_service set;
+allow sysinit device:dir read;
+allow sysinit init:dir search;
+allow sysinit init:file { read open };
+allow sysinit kernel:dir search;
+allow sysinit kernel:file { read open };
+allow sysinit proc:file write;
+allow sysinit proc_dirty_ratio:file write;
+allow sysinit self:capability sys_admin;
+allow sysinit ueventd:dir search;
+allow sysinit ueventd:file { read open };

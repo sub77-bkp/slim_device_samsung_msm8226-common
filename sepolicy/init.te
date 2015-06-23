@@ -1,0 +1,7 @@
+#============= init ==============
+allow init kernel:system syslog_read;
+allow init properties_device:file execute;
+allow init self:process execmem;
+allow init self:tcp_socket { bind create setopt };
+allow init sysinit:process setsched;
+allow init userinit_exec:file execute_no_trans;
